@@ -17,15 +17,15 @@ public class RegistroDeVendas {
 
     public void mostrarRegistroDaVenda() {
             double valorTotal=0;
-            System.out.println("\n=============== REGISTRO DAS VENDAS REALIZADAS ===============\n");
+            System.out.println("\n===================== REGISTRO DAS VENDAS REALIZADAS =====================\n");
             if (listaVendas.size() == 0) {
-                System.out.println("Não foi localizado nenhum registro de venda.");
+                System.out.println("Não foi localizado nenhum registro de vendas.");
             } else {
                 for (int i = 0; i < listaVendas.size(); i++) {
                     valorTotal+=listaVendas.get(i).getPrecoTotal();
                     System.out.println("\n=============== Venda "+(i+1)+ " realizada em: " +listaVendas.get(i).getDataDaVenda()+ " ===============\n" + listaVendas.get(i));
                 }
-                System.out.println("\n=============== VALOR TOTAL DAS VENDAS ===============\n" +
+                System.out.println("\n========================= VALOR TOTAL DAS VENDAS =========================\n" +
                         "R$ "+valorTotal);
             }
     }

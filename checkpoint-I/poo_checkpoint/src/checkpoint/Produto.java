@@ -7,7 +7,7 @@ public class Produto {
     private double preco;
     private int quantidade;
 
-    static int contador = 00001;
+    private static int contador = 00001;
 
     public Produto(String nome, double preco, int quantidade) {
         this.nome = nome;
@@ -34,7 +34,7 @@ public class Produto {
             System.out.println("Não há produtos suficientes no estoque");
         } else {
             this.quantidade -= quantidade;
-            System.out.println("\n ====================== INFORMAÇÕES DA VENDA REALIZADA ======================\n");
+            System.out.println("\n===================== INFORMAÇÕES DA VENDA REALIZADA =====================\n");
             System.out.println("Você vendeu " + quantidade + " unidade(s) de: " + this.nome);
             System.out.println("Preço obtido com a venda: R$ "+quantidade*this.preco);
             System.out.println("Quantidade restante em estoque: "+ this.quantidade);
