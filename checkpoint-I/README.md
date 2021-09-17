@@ -1,11 +1,11 @@
 # Definição da Proposta
 
 
-    Solange é uma artesã que desenvolve trabalhos manuais em pedraria. O problema é que Solange - assim como muitos outros artesãos ou comerciantes - não tem um controle de estoque dos seus produtos, nem um sistema que registra as vendas realizadas, para que ela possa manter um controle de seus itens e do seu caixa financeiro. Atualmente o registro das vendas realizadas por Solange é feito em um caderno de papel, e a verificação do estoque é feita “dando uma olhada" em todos os produtos existentes, para saber se há ou não mercadoria disponível quando um cliente solicita determinado item. De fato, esse sistema adotado por Solange não é prático.
+   Solange é uma artesã que desenvolve trabalhos manuais em pedraria. O problema é que Solange - assim como muitos outros artesãos ou comerciantes - não tem um controle de estoque dos seus produtos, nem um sistema que registra as vendas realizadas, para que ela possa manter um controle de seus itens e do seu caixa financeiro. Atualmente o registro das vendas realizadas por Solange é feito em um caderno de papel, e a verificação do estoque é feita “dando uma olhada" em todos os produtos existentes, para saber se há ou não mercadoria disponível quando um cliente solicita determinado item. De fato, esse sistema adotado por Solange não é prático.
 
-    O projeto foi desenvolvido pensando neste cenário de Solange e de tantos outros comerciantes. Na aplicação, Solange deverá poder cadastrar os seus produtos, verificar o estoque geral de mercadorias, bem como o estoque específico de determinada categoria de produtos. Deverá poder também adicionar novos itens aos produtos já criados, registrar suas vendas realizadas, bem como acessar um registro com todas essas vendas, datadas inclusive.  
+   O projeto foi desenvolvido pensando neste cenário de Solange e de tantos outros comerciantes. Na aplicação, Solange deverá poder cadastrar os seus produtos, verificar o estoque geral de mercadorias, bem como o estoque específico de determinada categoria de produtos. Deverá poder também adicionar novos itens aos produtos já criados, registrar suas vendas realizadas, bem como acessar um registro com todas essas vendas, datadas inclusive.  
 
-    Para criar essa aplicação, foram projetadas seis classes diferentes: 
+   Para criar essa aplicação, foram projetadas seis classes diferentes: 
 
 * **Estoque:** O estoque será identificado com três listas, sendo uma de produtos gerais e outras duas de produtos de categorias específicas;
 * **Produto:** Um produto não poderá ser instanciado e será identificado com um nome, um identificador único, uma categoria, um preço e uma quantidade;
