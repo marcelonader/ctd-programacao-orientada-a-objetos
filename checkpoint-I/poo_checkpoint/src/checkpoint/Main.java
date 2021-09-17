@@ -17,7 +17,7 @@ public class Main {
         System.out.println("+--------------------------------------------------------------------------+");
         System.out.print("Resposta: ");
         String resultadoUsuario = scanner.nextLine();
-        if(resultadoUsuario.toUpperCase(Locale.ROOT).equals("S")){
+        if(resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("S") || resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("SIM")){
             do {
                 System.out.println("\n============================= PÁGINA INICIAL =============================\n");
                 System.out.println("(1) Logar em uma conta já existente");
@@ -65,17 +65,17 @@ public class Main {
                             System.out.print("Resposta: ");
                             resultadoUsuario = scanner.nextLine();
                             resultadoUsuario = scanner.nextLine();
-                            if (resultadoUsuario.toUpperCase(Locale.ROOT).equals("N")) {
+                            if (resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("N") || resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("NAO") ||  resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("NÃO")) {
                                 System.out.println("\n===== Tem certeza que deseja sair? O programa será encerrado. [s/n] ======");
                                 System.out.print("Resposta: ");
                                 String resultadoUsuarioConfirmacao = scanner.nextLine();
-                                if (resultadoUsuarioConfirmacao.toUpperCase(Locale.ROOT).equals("S")) {
+                                if (resultadoUsuarioConfirmacao.toUpperCase(Locale.ROOT).trim().equals("S") || resultadoUsuarioConfirmacao.toUpperCase(Locale.ROOT).trim().equals("SIM")) {
                                     resultadoUsuario = "N";
                                 } else {
                                     resultadoUsuario = "S";
                                 }
                             }
-                        } while ((resultadoUsuario.toUpperCase(Locale.ROOT).equals("S")));
+                        } while ((resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("S") || resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("SIM")));
                     }
                 } else if (respostaLogarCadastrar == 2) {
                     cadastroDeUsuarios.cadastrarUsuario();
@@ -88,7 +88,7 @@ public class Main {
                     else
                         resultadoUsuario = "N";
                 }
-            } while (resultadoUsuario.toUpperCase(Locale.ROOT).equals("S"));
+            } while (resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("S") || resultadoUsuario.toUpperCase(Locale.ROOT).trim().equals("SIM"));
         }
     }
 }

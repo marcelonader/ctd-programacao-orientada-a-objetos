@@ -35,7 +35,7 @@ public class Estoque {
             System.out.println("\n====== Deseja adicionar mais de uma quantidade deste produto? [s/n] ======");
             System.out.print("Resposta: ");
             String respostaPerguntaQuantidade = scanner.next();
-            if (respostaPerguntaQuantidade.toUpperCase(Locale.ROOT).equals("S")) {
+            if (respostaPerguntaQuantidade.trim().toUpperCase(Locale.ROOT).equals("S") || respostaPerguntaQuantidade.trim().toUpperCase(Locale.ROOT).equals("SIM")) {
                 System.out.print("\nInforme a quantidade que deseja adicionar: ");
                 int respostaQuantidade = scanner.nextInt();
                 System.out.println("Só um instante...\n\n...");
@@ -52,7 +52,7 @@ public class Estoque {
             }
             System.out.println("\n=============== Deseja adicionar mais algum produto? [s/n] ===============\n");
             String respostaPerguntaMaisUmProduto = scanner.next();
-            if (respostaPerguntaMaisUmProduto.toUpperCase(Locale.ROOT).equals("S")) {
+            if (respostaPerguntaMaisUmProduto.trim().toUpperCase(Locale.ROOT).equals("S") || respostaPerguntaMaisUmProduto.trim().toUpperCase(Locale.ROOT).equals("SIM")) {
                 cadastrarNovoProduto();
             } else {
                 return;
@@ -72,7 +72,7 @@ public class Estoque {
             System.out.println("\n====== Deseja adicionar mais de uma quantidade deste produto? [s/n] ======");
             System.out.print("Resposta: ");
             String respostaPerguntaQuantidade = scanner.next();
-            if (respostaPerguntaQuantidade.toUpperCase(Locale.ROOT).equals("S")) {
+            if (respostaPerguntaQuantidade.trim().toUpperCase(Locale.ROOT).equals("S") || respostaPerguntaQuantidade.trim().toUpperCase(Locale.ROOT).equals("SIM")) {
                 System.out.print("\nInforme a quantidade que deseja adicionar: ");
                 int respostaQuantidade = scanner.nextInt();
                 System.out.println("Só um instante...\n\n...");
@@ -91,7 +91,7 @@ public class Estoque {
             System.out.print("Resposta: ");
             String respostaPerguntaMaisUmProduto = scanner.next();
 
-            if (respostaPerguntaMaisUmProduto.toUpperCase(Locale.ROOT).equals("S")) {
+            if (respostaPerguntaMaisUmProduto.trim().toUpperCase(Locale.ROOT).equals("S") || respostaPerguntaMaisUmProduto.trim().toUpperCase(Locale.ROOT).equals("SIM")) {
                 cadastrarNovoProduto();
             } else {
                 return;
