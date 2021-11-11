@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Joken_Po:jar">
+    <output-path>$PROJECT_DIR$/../../jar</output-path>
+    <root id="archive" name="Joken_Po.jar">
+      <element id="module-output" name="Joken_Po" />
+    </root>
+  </artifact>
+</component>
